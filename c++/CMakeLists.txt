@@ -188,6 +188,9 @@ configure_package_config_file(cmake/CapnProtoConfig.cmake.in
   INSTALL_DESTINATION ${CONFIG_PACKAGE_LOCATION}
   PATH_VARS CMAKE_INSTALL_FULL_INCLUDEDIR
 )
+
+message(CMAKE_INSTALL_FULL_INCLUDEDIR ${CMAKE_INSTALL_FULL_INCLUDEDIR})
+
 export(EXPORT CapnProtoTargets
   FILE "${CMAKE_CURRENT_BINARY_DIR}/cmake/CapnProtoTargets.cmake"
   NAMESPACE CapnProto::
